@@ -10,31 +10,25 @@ const libraryEl = document.querySelector('.library');
 
 // SETTING GLOBAL VARIABLES
 let myLibrary = [];
-
-// sample book data until we figure out local storage
-// const book1 = new Book('john doe', 'ghost', 256, true, 1);
-// const book2 = new Book('mickey mouse', 'mousin around', 180, false, 2);
-// const book3 = new Book('spiderman', 'webbin 2021', 16, true, 3);
-// const book4 = new Book('john doe', 'ghost2', 256, false, 4);
-// const book5 = new Book('mickey mouse', 'mousin around2', 180, false, 5);
-// const book6 = new Book('spiderman', 'webbin 2021 -2', 16, true, 6);
-// myLibrary.push(book1);
-// myLibrary.push(book2);
-// myLibrary.push(book3);
-// myLibrary.push(book4);
-// myLibrary.push(book5);
-// myLibrary.push(book6);
-// drawLibraryCards();
-
 let bookId = myLibrary.length + 1;
 
 
-function Book(author, title, pages, read, id) {
-    this.id = id,
-    this.title = stringFormatting(title),
-    this.author = stringFormatting(author),
-    this.pages = pages,
-    this. read = read
+// function Book(author, title, pages, read, id) {
+//     this.id = id,
+//     this.title = stringFormatting(title),
+//     this.author = stringFormatting(author),
+//     this.pages = pages,
+//     this. read = read
+// }
+
+class Book {
+    constructor(author, title, pages, read, id) {
+        this.id = id;
+        this.title = stringFormatting(title);
+        this.author = stringFormatting(author);
+        this.pages = pages;
+        this.read = read;
+    }
 }
 
 // prototypes
