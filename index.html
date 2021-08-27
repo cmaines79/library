@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+    
+    <title>The Odin Project - Library</title>
+</head>
+<body>
+    <section class="body">
+        <header class="container header">
+            <div class="logo">
+                <img src="./images/logo.jpg" alt="">
+                <h1>The Odin Project | </h1>
+                <h1 id="library">Library</h1>
+            </div>
+            <div class="nav">
+                <button id="addBook" class="btn">Add a Book</button>
+            </div>
+        </header>
+        <nav class="nav container">
+            <!-- <h3>sort/order</h3> -->
+            <!-- <h3>legend</h3> -->
+        </nav>
+        <div class="intro">
+            <h2 id="introH2">Add books here</h2>
+        </div>
+
+        <div class="container library">
+            <div class="card">
+                <span><button id='removeCard'>X</button></span>
+                <span class="book-title">this title is really long, i mean really long</span>
+                <span class="book-author">author</span>
+                <span class="book-pages">pages</span>
+                <span class="book-read">Mark as Read:<input type="checkbox" name="markAsRead" id="markAsRead"></span>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="newBook">
+        <div class="bookWelcome">
+            <h3>Tell us about your book:</h3>
+        </div>
+        <div class="bookInfo">
+            <form action="">
+                <div class="labels">
+                    <label for="title">Title:</label>
+                    <label for="author">Author:</label>
+                    <label for="pages">Number of Pages:</label>
+                    <label for="">I have read this book!</label>
+                </div>
+                <div class="inputs">
+                    <input type="text" name="title" id="title">
+                    <input type="text" name="author" id="author">
+                    <input type="text" name="pages" id="pages">
+                    <input type="checkbox" name="read" id="read">
+                </div>
+            </form>
+        </div>
+        <div class='navButtons'>
+            <button id="addNewBook">Add Book</button>
+            <button id="addNewBookCancel">Cancel</button>
+        </div>
+    </div>
+
+    <footer class="footer container">
+        <!-- <h3>by me</h3> -->
+        <!-- <h3> library metrics - count, read, not read</h3> -->
+    </footer>
+    
+</body>
+</html>
